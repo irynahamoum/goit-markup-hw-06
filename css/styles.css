@@ -357,6 +357,7 @@ img {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 .about-text {
   color: #434455;
@@ -499,7 +500,6 @@ img {
 
 .overlay-text {
   position: absolute;
-  z-index: 1;
   top: 0;
   left: 0;
   color: #f4f4fd;
@@ -1025,7 +1025,7 @@ img {
   }
 } */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 15px;
@@ -1069,6 +1069,10 @@ img {
 
   .about-element {
     width: calc((100% - 24px) / 2);
+  }
+
+  .about-title {
+    text-align: left;
   }
 
   .team-list {
