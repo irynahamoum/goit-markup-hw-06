@@ -46,6 +46,8 @@ img {
 }
 
 .header-container {
+  max-width: 320px;
+  height: 56px;
   display: flex;
   color: rgba(255, 255, 255, 1);
   flex-shrink: 0;
@@ -77,7 +79,8 @@ img {
 
 .menu {
   gap: 40px;
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: flex-start;
   flex-grow: 1;
 }
@@ -128,6 +131,7 @@ img {
 }
 
 .address {
+  display: none;
   font-style: normal;
   color: #434455;
   font-size: 16px;
@@ -155,6 +159,91 @@ img {
 .address-item:hover,
 .address-item:focus {
   color: #404bbf;
+}
+
+.mob-menu-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.mob-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #2f2f37;
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.menu-close-btn {
+  /* position: absolute;
+  top: 24px;
+  right: 24px; */
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: #2e2f42;
+  opacity: 0.1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.menu-social-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.menu-social-box,
+.menu-social-box::after,
+.menu-social-box::before {
+  box-sizing: border-box;
+}
+
+.menu-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-circle:hover .footer-circle:focus {
+  background-color: #31d0aa;
+}
+
+.menu-icons-list .footer-circle:hover,
+.menu-icons-list .footer-circle:focus {
+  background-color: #31d0aa;
 }
 
 .hero {
@@ -192,7 +281,7 @@ img {
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
   margin: 0 auto 48px;
-  max-width: 288px;
+  max-width: 140px;
 }
 
 .hero-button {
@@ -479,8 +568,11 @@ img {
 
 .footer-description {
   flex-basis: 100%;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-left: 0;
+  padding-bottom: 72px;
 }
 
 .footer-logo {
