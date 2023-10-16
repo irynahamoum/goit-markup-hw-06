@@ -1085,11 +1085,13 @@ img {
 
   .address {
     display: flex;
+    max-width: 120px;
+    padding: 16px 0;
   }
 
   .address-list {
     flex-direction: column;
-    gap: 12px;
+    gap: 2px;
   }
 
   .address-item {
@@ -1261,6 +1263,10 @@ img {
 
   .header-nav {
     margin-right: auto;
+  }
+
+  .address {
+    max-width: 344px;
   }
 
   .address-list {
