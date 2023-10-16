@@ -142,7 +142,6 @@ img {
   padding-left: 16px;
   padding-right: 24px;
   display: flex;
-  display: none;
   padding: 72px 24px 40px 16px;
   flex-direction: column;
   justify-content: space-between;
@@ -1086,12 +1085,15 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 15px;
     margin: 0 auto;
   }
 
   .header-container {
     height: 72px;
+  }
+
+  .mob-menu {
+    display: none;
   }
 
   .mob-menu-btn {
@@ -1223,9 +1225,13 @@ img {
     padding: 96px 0;
   }
 
+  .container.footer-content {
+    width: 584px;
+  }
+
   .footer-content {
-    margin: 0 0 0 0;
-    padding-left: 108px;
+    /* margin: 0 0 0 0; */
+    /* padding-left: 108px; */
     gap: 72px 24px;
   }
 
