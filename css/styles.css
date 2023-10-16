@@ -69,7 +69,7 @@ img {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .logo-detail {
@@ -190,6 +190,12 @@ img {
   fill: #2f2f37;
 }
 
+.mob-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
 .mob-menu-list {
   display: flex;
   flex-direction: column;
@@ -222,7 +228,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .mob-address-link {
@@ -314,7 +319,7 @@ img {
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
   margin: 0 auto 48px;
-  max-width: 140px;
+  max-width: 160px;
 }
 
 .hero-button {
@@ -624,7 +629,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin-left: 0;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -637,8 +642,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 17.5px;
-  margin-left: 86px;
+  margin: 0 auto 17.5px;
+  /* margin-left: 86px; */
 }
 
 .footer-logo-detail {
@@ -658,7 +663,7 @@ img {
 .footer-social {
   flex-basis: 100%;
   display: block;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -676,7 +681,8 @@ img {
 
 .footer-icons-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  margin: 0 auto;
   gap: 16px;
 }
 
@@ -1199,6 +1205,10 @@ img {
     padding: 120px 0;
   }
 
+  .about-list {
+    justify-content: left;
+  }
+
   .about-element {
     width: calc((100% - 24px) / 2);
   }
@@ -1229,14 +1239,11 @@ img {
     padding: 96px 0;
   }
 
-  .container.footer-content {
-    width: 584px;
-  }
-
   .footer-content {
     /* margin: 0 0 0 0; */
     /* padding-left: 108px; */
     gap: 72px 24px;
+    /* width: 584px; */
   }
 
   .footer-description {
@@ -1326,7 +1333,7 @@ img {
     text-align: center;
     margin: 0 auto;
     padding: 188px 0;
-    min-width: 1158px;
+    min-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1351,6 +1358,7 @@ img {
   }
 
   .hero-button {
+    margin: 0 auto;
     cursor: pointer;
   }
 
@@ -1403,9 +1411,6 @@ img {
   .portfolio-card-list {
     gap: 48px 24px;
   }
-  .container.footer-content {
-    max-width: 1158px;
-  }
 
   .footer-container {
     display: flex;
@@ -1417,6 +1422,7 @@ img {
   }
 
   .footer-content {
+    /* max-width: 1158px; */
     flex-wrap: nowrap;
     justify-content: center;
     align-items: baseline;
