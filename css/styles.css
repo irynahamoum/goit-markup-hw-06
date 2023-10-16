@@ -147,6 +147,10 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.is-open {
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
 }
@@ -815,7 +819,7 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
+.is-hidden {
   overflow: hidden;
   opacity: 1;
   visibility: visible;
