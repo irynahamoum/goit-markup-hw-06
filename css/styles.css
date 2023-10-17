@@ -50,6 +50,7 @@ img {
   height: 56px;
   display: flex;
   align-items: center;
+
   color: rgba(255, 255, 255, 1);
   flex-shrink: 0;
 }
@@ -1118,6 +1119,7 @@ img {
 
   .header-nav {
     margin-right: 120px;
+    gap: 120px;
   }
 
   .menu {
@@ -1308,6 +1310,7 @@ img {
 
   .header-nav {
     margin-right: auto;
+    gap: 76px;
   }
 
   .address {
@@ -1415,7 +1418,7 @@ img {
 
   .footer-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     height: 312px;
     width: 100%;
     padding: 100px 0;
