@@ -42,7 +42,6 @@ img {
 .header {
   position: fixed;
   width: 100%;
-  height: 72px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -54,6 +53,7 @@ img {
 }
 
 .header-container {
+  height: 56px;
   max-width: 320px;
   height: 56px;
   display: flex;
@@ -287,6 +287,11 @@ img {
 .menu-icons-list .footer-circle:hover,
 .menu-icons-list .footer-circle:focus {
   background-color: #31d0aa;
+}
+
+.main {
+  position: relative;
+  top: 57px;
 }
 
 .hero {
@@ -614,6 +619,7 @@ img {
 }
 
 .footer-container {
+  position: absolute;
   background: #2e2f42;
   /* height: 664px; */
   width: 100%;
